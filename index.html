@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+	<title>Movie Database</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="navbar">
+		<a href="#">Home
+			<i class="fa fa-home"></i>
+		</a>
+		<a href="#">Login
+			<i class="fa fa-sign-in"></i>
+		</a>
+		<a href="#">SignUp
+			<i class="fa fa-sign-out"></i>
+		</a>
+		<a href="#">Contact
+			<i class="fa fa-phone"></i>
+		</a>
+	
+		<div class="logo">
+			<a href="#database" style="font-size: 35px;color: purple;">Movie Database</a>
+		</div>
+	</div>
+
+	<input type="text" name="name" id="genre" placeholder="Search For !... ">	
+	<button id="search" class="submit_btn">
+		<i class="fa fa-search"></i>
+	</button>	
+
+	<select class="drop" id="sort_data">
+		<option value="empty"></option>
+ 		<option value="low_to_high_year">Low to high Year</option>
+  		<option value="low_to_high_box_office">Low to High BoxOffice</option>
+  		<option value="high_to_low_year">High to Low Year</option>
+ 		<option value="high_to_low_box_office">High to Low BoxOffice</option>
+	</select>
+	<button id="search_one" class="submit_btn">
+		<i class="fa fa-search"></i>
+	</button>	
+
+    <div class="grid_box">
+    </div>
+
+	<script type="text/javascript" src="index.js">	
+	</script>
+
+</body>
+</html>
